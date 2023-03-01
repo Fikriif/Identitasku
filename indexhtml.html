@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Identity</title>
+    <style>
+        html, body, * {
+            padding: 0;
+            margin: 0;
+            font-family: serif;
+        }
+        
+      .box-terluar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin:0 auto;
+        height: 100vh;
+        background-image: url("jepang1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .box-saya {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        padding-bottom: 20px;
+      }
+      .box-saya img {
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      .box-tombol {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 6px;
+      }
+      .box-tombol button {
+        background-color: white;
+        border: none;
+        padding: 8px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: 350ms ease-in-out;
+
+      }
+      .box-tombol button:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-terluar">
+      <div class="box-saya">
+        <img src="raku.jpeg" width="90" height="130" />
+        <h1>Fikri Ibnu Fajar</h1>
+        <p>Programmer</p>
+      </div>
+      <div class="box-tombol">
+        <button onclick="ayo('https://Facebook.com/Reynaldi')">Facebook</button>
+        <button onclick="ayo('https://Instagram.com/rey._.naldi')">Instagram</button>
+        <button onclick="ayo('https://Whatsapp.com')">Whatsapp</button>
+        <button onclick="ayo('https://Linkedin.com')">Linkedin</button>
+      </div>
+    </div>
+    <script>
+        function ayo(kemana){
+            window.open(kemana)
+        }
+    </script>
+  </body>
+</html>
